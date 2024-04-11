@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+   products:
+     image: akhil2073/amazonproducts:latest
+     ports:
+       - "10:80"
+   Cart:
+     image: akhil2073/amazoncart:latest
+     ports:
+       - "20:80"
+   Payments:
+     image: akhil2073/amazonpayments:latest
+     ports:
+       - "30:80"
+   Reviews:
+     image: akhil2073/amazonreviewss:latest
+     ports:
+       - "40:80"
