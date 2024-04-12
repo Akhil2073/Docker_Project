@@ -8,12 +8,12 @@ STEP:1
 
 Create 3 ec2-instances/servers, connect servers and update it with hostnames (manage, worker1, worker2)
 Run the below commands in all the 3 servers 
-    yum install docker -y
-    systemctl start docker
-    systemctl status docker
+    ## yum install docker -y
+    ## systemctl start docker
+    ## systemctl status docker
 
 Join a cluster with the servers: {run the command in manager server}
-    docker swarm init    
+    ## docker swarm init    
 this generates a token, copy and paste that in 2 worker nodes
 
 STEP:2 
@@ -29,13 +29,12 @@ write index.html and Dockerfile. I have attached the files in the repo.
 
   STEP:4 
   Give docker socket permissions to build the images in manage server.
-          chmod 777 /var/run/docker.sock
+          ## chmod 777 /var/run/docker.sock
    since the file is modified reload daemon and restart docker.
-          systemctl daemon-reload
-          systemctl restart docker.service
-
-          ## initial 4 stages will run successfully till here. 
-          ## when we try to build (2nd stage) the error pops up for permissions , execute the above commands
+          ## systemctl daemon-reload
+          ## systemctl restart docker.service
+ initial 4 stages will run successfully till here. 
+ when we try to build (2nd stage) the error pops up for permissions , execute the above commands
 
 
 STEP:5 
