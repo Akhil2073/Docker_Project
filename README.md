@@ -5,7 +5,7 @@ Microservices Project with Jenkins and Docker
 STEP BY STEP GUIDE FOR DOCKER PROJECT DEPLOYMENT USING JENKINS PIPELINE:
 
 STEP:1 
-
+t2.medium instances
 Create 3 ec2-instances/servers, connect servers and update it with hostnames (manage, worker1, worker2)
 Run the below commands in all the 3 servers 
 
