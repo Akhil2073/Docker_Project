@@ -4,15 +4,23 @@ services:
      image: akhil2073/amazonproducts:latest
      ports:
        - "10:80"
+     deploy:
+       replicas: 3
    Cart:
      image: akhil2073/amazoncart:latest
      ports:
        - "20:80"
+     deploy:
+       replicas: 3
    Payments:
      image: akhil2073/amazonpayments:latest
      ports:
        - "30:80"
+     deploy:
+       replicas: 3
    Reviews:
      image: akhil2073/amazonreviewss:latest
      ports:
        - "40:80"
+     deploy:
+       replicas: 3
