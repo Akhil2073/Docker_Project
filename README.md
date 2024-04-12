@@ -1,5 +1,5 @@
 # Docker_Project
-Project on Docker tool integrating it with jenkins
+Microservices Project with Jenkins and Docker
 
 
 STEP BY STEP GUIDE FOR DOCKER PROJECT DEPLOYMENT USING JENKINS PIPELINE:
