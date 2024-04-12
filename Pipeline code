@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                git 'https://github.com/RAHAMSHAIK007/dockernewproject.git'
+                git branch: 'main' url: 'https://github.com/Akhil2073/Docker_Project.git'
             }
         }
         stage('build') {
@@ -23,5 +23,11 @@ pipeline {
                 sh 'docker push $repo'
             }
         }
+        stage('deploy') {
+            steps {
+                sh 'docker stack deploy -c compose.yml amazon'
+            }
+        }
+
     }
 }
