@@ -35,8 +35,10 @@ write index.html and Dockerfile. I have attached the files in the repo.
   
           ## chmod 777 /var/run/docker.sock
    since the file is modified reload daemon and restart docker.
+   
           ## systemctl daemon-reload
           ## systemctl restart docker.service
+          
  initial 4 stages will run successfully till here. 
  when we try to build (2nd stage) the error pops up for permissions , execute the above commands
 
