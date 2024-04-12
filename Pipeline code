@@ -1,3 +1,27 @@
 pipeline {
-
+    agent any 
+    
+    stages {
+        stage('checkout') {
+            steps {
+                git 'https://github.com/RAHAMSHAIK007/dockernewproject.git'
+            }
+        }
+        stage('build') {
+            steps {
+                sh 'docker build -t $img .'
+            }
+        }
+        stage('tag') {
+            steps {
+                sh 'docker tag $img $repo'
+            }
+        }
+        stage('push') {
+            steps {
+                sh 'docker login -u  -p '
+                sh 'docker push $repo'
+            }
+        }
+    }
 }
