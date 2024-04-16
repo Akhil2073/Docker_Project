@@ -1,12 +1,12 @@
 # Docker_Project
 Microservices Project with Jenkins and Docker
 
-## tools/technologies:
-## Docker 
-## Docker-swarm
-## Jenkins
-## Git Hub
-## Shell Scripting
+     ## tools/technologies:
+     ## Docker 
+     ## Docker-swarm
+     ## Jenkins
+     ## Git Hub
+     ## Shell Scripting
 
 
 STEP BY STEP GUIDE FOR DOCKER PROJECT DEPLOYMENT USING JENKINS PIPELINE:
